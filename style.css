@@ -1,4 +1,34 @@
+body {
+  background: #F5F0E1;
+}
+
 header {
+  background: #c9b27c;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+h1 {
+  margin: auto 0;
+  margin-bottom: 10px;
+  font-size: 200px;
+}
+
+.header-text {
+  margin-bottom: 200px;
+}
+
+.nav-bar {
+  margin-bottom: 10px;
+}
+
+
+
+/*header {
   border: 4px solid blue;
   height: 700px;
   margin-bottom: 10px;
@@ -26,8 +56,6 @@ header {
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
 }
-
-/*Look into this: swapped grid-template-rows to grid-auto rows so the rows dont get squeezed: auto-size to content:*/
 
 .box {
   border: 3px solid hotpink;
@@ -76,4 +104,4 @@ img {
 
 footer {
   background-color: lightgoldenrodyellow;
-}
+} */
