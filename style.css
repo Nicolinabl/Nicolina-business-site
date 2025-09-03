@@ -2,20 +2,27 @@ body {
   background: #F5F0E1;
 }
 
+/*Header section*/
+
 header {
   background: #c9b27c;
   height: 700px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 20px;
 }
+
+/*WORK ON: Why does the header not fill the full screen horisontally when looking on small iphone?*/
 
 h1 {
   margin: auto 0;
   margin-bottom: 10px;
-  font-size: 200px;
+  font-size: 10em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header-text {
@@ -26,7 +33,52 @@ h1 {
   margin-bottom: 10px;
 }
 
+/*Main section*/
 
+.main-section {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+/* Media queries */
+
+@media (max-width: 667px) {
+  h1 {
+    font-size: 5em;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .form-box {
+    grid-column: span 2;
+  }
+
+  .info-text {
+    grid-column: span 2;
+  }
+}
+
+
+
+
+
+
+
+/*       old part       */
 
 /*header {
   border: 4px solid blue;
