@@ -13,7 +13,7 @@ header {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 /*WORK ON: Why does the header not fill the full screen horisontally when looking on small iphone?*/
@@ -42,7 +42,7 @@ h1 {
 }
 
 img {
-  width: 300px;
+  width: 60%;
   margin-top: 20px;
 }
 
@@ -51,6 +51,38 @@ img {
   flex-direction: column;
   align-items: center;
   background: white;
+  margin: auto;
+  gap: 20px;
+}
+
+.card-1 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 6px -6px #c9b27c;
+}
+
+.card-2 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 6px -6px #c9b27c;
+}
+
+.card-3 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 6px -6px #c9b27c;
+}
+
+.card-4 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 6px -6px #c9b27c;
+}
+
+.card-5 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 6px -6px #c9b27c;
 }
 
 /* Media queries */
@@ -63,6 +95,13 @@ img {
 }
 
 @media (min-width: 1440px) {
+
+  .main-section {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, minmax(350px, 1fr));
+  }
+
   .form-box {
     grid-column: span 2;
   }
@@ -71,6 +110,8 @@ img {
     grid-column: span 2;
   }
 }
+
+
 
 
 
