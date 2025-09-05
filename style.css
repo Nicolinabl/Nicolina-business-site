@@ -38,7 +38,6 @@ header {
   width: 100%;
   margin-bottom: 100px;
   text-align: center;
-  /* position: relative;*/
 }
 
 h1 {
@@ -60,8 +59,18 @@ h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/*Main section*/
 
+/* Intro section */
+
+.intro {
+  text-align: center;
+  margin: 80px;
+  font-size: 30px;
+}
+
+
+
+/* Main section */
 .main-section {
   display: grid;
   gap: 5px;
@@ -80,8 +89,11 @@ img {
   align-items: center;
   background: white;
   margin: auto;
-  gap: 20px;
+  gap: 10px;
+  border-radius: 1%;
 }
+
+/* POLAROIDS*/
 
 .card-1 {
   width: 100%;
@@ -148,6 +160,38 @@ img {
   border: 0.5px solid #cac3b1;
 }
 
+.card-9 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -6px #c9b27c;
+  margin-bottom: 100px;
+  border: 0.5px solid #cac3b1;
+}
+
+.card-10 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -6px #c9b27c;
+  margin-bottom: 100px;
+  border: 0.5px solid #cac3b1;
+}
+
+.card-11 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -6px #c9b27c;
+  margin-bottom: 100px;
+  border: 0.5px solid #cac3b1;
+}
+
+.card-12 {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -6px #c9b27c;
+  margin-bottom: 100px;
+  border: 0.5px solid #cac3b1;
+}
+
 .info-text {
   text-align: center;
   margin: 30px;
@@ -158,6 +202,7 @@ img {
   padding: 50px;
 }
 
+
 /* Footer section*/
 
 footer {
@@ -165,27 +210,38 @@ footer {
   padding: 40px;
 }
 
+
 /* Media queries */
 
 @media (max-width: 667px) {
   h1 {
     font-size: 4em;
   }
+}
 
+@media (max-width: 1023px) {
   .nav-bar {
     display: none;
   }
-
 }
 
-@media (min-width: 668px) {
+@media (min-width: 775px) {
   .card-1 {
     rotate: -10deg;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
+  }
+
+  .card-1:hover {
+    rotate: 0deg;
   }
 
   .card-2 {
     rotate: 5deg;
+    margin-bottom: 1px;
+  }
+
+  .card-2:hover {
+    rotate: 0deg;
   }
 
   .card-3 {
@@ -193,21 +249,83 @@ footer {
     margin-bottom: 50px;
   }
 
+  .card-3:hover {
+    rotate: 0deg;
+  }
+
   .card-4 {
     rotate: -3deg;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .card-4:hover {
+    rotate: 0deg;
   }
 
   .card-5 {
     rotate: 2deg;
   }
 
+  .card-5:hover {
+    rotate: 0deg;
+  }
+
+  .card-6 {
+    rotate: -2deg;
+    margin-bottom: 10px;
+  }
+
+  .card-6:hover {
+    rotate: 0deg;
+  }
+
   .card-7 {
     rotate: 20deg;
   }
 
+  .card-7:hover {
+    rotate: 0deg;
+  }
+
   .card-8 {
     rotate: -7deg;
+  }
+
+  .card-8:hover {
+    rotate: 0deg;
+  }
+
+  .card-9 {
+    rotate: -3deg;
+    margin-bottom: 10px;
+  }
+
+  .card-9:hover {
+    rotate: 0deg;
+  }
+
+  .card-10 {
+    rotate: 10deg;
+  }
+
+  .card-10:hover {
+    rotate: 0deg;
+  }
+
+  .card-11 {
+    rotate: -5deg;
+  }
+
+  .card-11:hover {
+    rotate: 0deg;
+  }
+
+  .card-12 {
+    rotate: 2deg;
+  }
+
+  .card-12:hover {
+    rotate: 0deg;
   }
 }
 
@@ -227,5 +345,3 @@ footer {
     grid-column: span 2;
   }
 }
-
-/*test*/
