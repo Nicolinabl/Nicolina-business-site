@@ -74,7 +74,7 @@ h3 {
 .main-section {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
   margin: auto;
 }
 
@@ -91,7 +91,9 @@ img {
   margin: auto;
   gap: 10px;
   border-radius: 1%;
+  transition: all 0.5s;
 }
+
 
 /* POLAROIDS*/
 
@@ -193,24 +195,29 @@ img {
 }
 
 
-/* INFO and FORM*/
+/* INFO and FORM section */
+
+.info-section {
+  display: flex;
+}
 
 .info-text {
   text-align: center;
   margin: 30px;
   padding: 10px;
-  grid-column: span 2;
+  width: 50%;
 }
 
 .form-box {
   padding: 50px;
-  grid-column: span 2;
+  width: 50%;
 }
 
 
 /* Footer section*/
 
 footer {
+  background: #c9b27c;
   text-align: center;
   padding: 40px;
 }
@@ -222,24 +229,28 @@ footer {
   h1 {
     font-size: 4em;
   }
-
-  .form-box {
-    grid-column: span 1;
-  }
-
-  .info-text {
-    grid-column: span 1;
-  }
-
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .nav-bar {
     display: none;
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 668px) and (max-width: 1024px) {
+  .main-section {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width:667px) {
+  .main-section {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+
   .card-1 {
     rotate: -10deg;
     margin-bottom: 1px;
@@ -268,7 +279,7 @@ footer {
   }
 
   .card-4 {
-    rotate: -3deg;
+    rotate: 4deg;
     margin-bottom: 5px;
   }
 
@@ -343,11 +354,11 @@ footer {
   }
 }
 
-@media (min-width: 1440px) {
+/*@media (min-width: 1440px) {
 
   .main-section {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(4, minmax(350px, 1fr));
   }
-}
+}*/
