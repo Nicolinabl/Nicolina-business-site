@@ -3,7 +3,6 @@ body {
 }
 
 /*Header section*/
-
 .nav-bar {
   Padding: 20px;
   font-size: 30px;
@@ -41,7 +40,7 @@ header {
 }
 
 h1 {
-  margin: auto 0;
+  margin: 0 auto;
   padding-top: 200px;
   font-size: 9em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -61,7 +60,6 @@ h3 {
 
 
 /* Intro section */
-
 .intro {
   text-align: center;
   margin: 80px;
@@ -69,13 +67,12 @@ h3 {
 }
 
 
-
 /* Main section */
 .main-section {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
-  margin: auto;
+  margin: 0 auto;
 }
 
 img {
@@ -88,7 +85,7 @@ img {
   flex-direction: column;
   align-items: center;
   background: white;
-  margin: auto;
+  margin: 0 auto;
   gap: 10px;
   border-radius: 1%;
   transition: all 0.5s;
@@ -96,7 +93,6 @@ img {
 
 
 /* POLAROIDS*/
-
 .card-1 {
   width: 100%;
   max-width: 400px;
@@ -196,26 +192,26 @@ img {
 
 
 /* INFO and FORM section */
-
 .info-section {
+  background: #F5F0E1;
   display: flex;
 }
 
 .info-text {
+  background: #F5F0E1;
   text-align: center;
-  margin: 30px;
   padding: 10px;
   width: 50%;
 }
 
 .form-box {
+  background: #F5F0E1;
   padding: 50px;
   width: 50%;
 }
 
 
 /* Footer section*/
-
 footer {
   background: #c9b27c;
   text-align: center;
@@ -224,7 +220,6 @@ footer {
 
 
 /* Media queries */
-
 @media (max-width: 667px) {
   h1 {
     font-size: 3em;
@@ -234,6 +229,10 @@ footer {
 @media (max-width: 1024px) {
   .nav-bar {
     display: none;
+  }
+
+  .info-section {
+    flex-direction: column;
   }
 }
 
@@ -353,12 +352,3 @@ footer {
     rotate: 0deg;
   }
 }
-
-/*@media (min-width: 1440px) {
-
-  .main-section {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(4, minmax(350px, 1fr));
-  }
-}*/

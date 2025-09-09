@@ -11,15 +11,15 @@
 <body>
   <!---HEADER FLEXBOX------------->
   <div class="nav-bar">
-    <button><a href="#"> Home </a></button>
-    <button><a href="#">Models</a></button>
-    <button><a href="#">About us</a></button>
-    <button><a href="#">Contact</a></button>
+    <button class="nav home"><a href="#"> Home </a></button>
+    <button class="nav models"><a href="#">Models</a></button>
+    <button class="nav about"><a href="#">About us</a></button>
+    <button class="nav contact"><a href="#">Contact</a></button>
   </div>
+
   <header>
     <h1>WILLZ MODELS</h1>
     <p>Feline model agency</p>
-
   </header>
 
   <div class="intro">
@@ -28,7 +28,6 @@
 
   <!----MAIN section GRID--------->
   <section class="main-section">
-
     <div class="box card-1">
       <img src="images/willz-zara.jpeg" />
       <h3>BLABLA 1</h3>
@@ -100,12 +99,10 @@
       <h3>BLABLA 12</h3>
       <p>Text here</p>
     </div>
-
   </section>
 
 
   <!--INFO + FORM section------->
-
   <section class="info-section">
     <div class="box info-text">
       <h2>Info here</h2>
@@ -119,12 +116,45 @@
     </div>
 
     <div class="box form-box">
-      - Form will be here-<br>
-      - Form will be here-<br>
-      - Form will be here-<br>
-      - Form will be here-<br>
-      - Form will be here-<br>
+      <form action="http://httpbin.org/anything" method="post">
+        <fieldset>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="text" name="email" placeholder="cat@catmail.meow" required>
+          </label>
+
+          <label>
+            Which verion of Willz are you interested in
+            <select name="willz-version" id="willz-version" required>
+              <option value="Sophisticated Willz">Sophisticated Willz</option>
+              <option value="Cowboy Willz">Cowboy Willz</option>
+              <option value="Fun Willz">Fun Willz</option>
+            </select>
+          </label>
+
+          <label>
+            How long would you like to book Willz for
+            <input type="radio" name="time" value="full day"> Full day
+            <input type="radio" name="time" value="half day"> Half day
+          </label>
+
+          <label>
+            Requested date
+            <input type="date" name="day" id="day" required>
+          </label>
+
+        </fieldset>
+
+        <button class="request-button" type="submit">Send booking request</button>
+
+      </form>
     </div>
+
   </section>
 
   <!---Footer section----------->
