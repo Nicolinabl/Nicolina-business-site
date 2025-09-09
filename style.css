@@ -1,5 +1,5 @@
 body {
-  background: #F5F0E1;
+  background: white;
 }
 
 /*Header section*/
@@ -8,7 +8,7 @@ body {
   font-size: 30px;
   top: 0;
   position: sticky;
-  background: #c9b27c;
+  background: #faebe8;
   text-align: center;
   z-index: 1000;
 }
@@ -31,12 +31,13 @@ a:hover {
   color: #F5F0E1;
 }
 
-header {
-  background: #c9b27c;
+.hero {
+  background: url("images/marble.jpg") center/cover no-repeat;
   height: 700px;
   width: 100%;
-  margin-bottom: 100px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -61,14 +62,16 @@ h3 {
 
 /* Intro section */
 .intro {
+  background: white;
   text-align: center;
-  margin: 80px;
   font-size: 30px;
+  margin: 200px 0;
 }
 
 
 /* Main section */
 .main-section {
+  background: #fbf1ee;
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
@@ -193,27 +196,46 @@ img {
 
 /* INFO and FORM section */
 .info-section {
-  background: #F5F0E1;
+  background: white;
   display: flex;
 }
 
 .info-text {
-  background: #F5F0E1;
   text-align: center;
   padding: 10px;
   width: 50%;
 }
 
 .form-box {
-  background: #F5F0E1;
   padding: 50px;
   width: 50%;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.radio-buttons {
+  display: inline;
+}
+
+
+
+
+
 
 /* Footer section*/
 footer {
-  background: #c9b27c;
+  background: #faebe8;
   text-align: center;
   padding: 40px;
 }

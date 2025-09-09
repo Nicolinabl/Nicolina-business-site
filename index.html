@@ -17,13 +17,15 @@
     <button class="nav contact"><a href="#">Contact</a></button>
   </div>
 
-  <header>
-    <h1>WILLZ MODELS</h1>
-    <p>Feline model agency</p>
+  <header class="hero">
+    <div class="header-text">
+      <h1>WILLZ MODELS</h1>
+      <p>Feline model agency</p>
+    </div>
   </header>
 
   <div class="intro">
-    <p>One cat, many faces.</p>
+    <p>One cat, many faces...</p>
   </div>
 
   <!----MAIN section GRID--------->
@@ -111,6 +113,12 @@
         dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor.
         At ex
         recusandae quidem necessitatibus nemo quo quos pariatur, veniam, quam voluptatibus voluptates explicabo
+        dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor.
+        At ex
+        recusandae quidem necessitatibus nemo quo quos pariatur, veniam, quam voluptatibus voluptates explicabo
+        dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor.
+        At ex
+        recusandae quidem necessitatibus nemo quo quos pariatur, veniam, quam voluptatibus voluptates explicabo
         dolorum.
       </p>
     </div>
@@ -118,18 +126,19 @@
     <div class="box form-box">
       <form action="http://httpbin.org/anything" method="post">
         <fieldset>
+          <legend>Send a booking request</legend>
           <label>
-            Name
+            <span>Name</span>
             <input type="text" name="name" placeholder="Your name" required>
           </label>
 
           <label>
-            Email
+            <span>Email</span>
             <input type="text" name="email" placeholder="cat@catmail.meow" required>
           </label>
 
           <label>
-            Which verion of Willz are you interested in
+            <span>Version of Willz</span>
             <select name="willz-version" id="willz-version" required>
               <option value="Sophisticated Willz">Sophisticated Willz</option>
               <option value="Cowboy Willz">Cowboy Willz</option>
@@ -138,19 +147,22 @@
           </label>
 
           <label>
-            How long would you like to book Willz for
-            <input type="radio" name="time" value="full day"> Full day
-            <input type="radio" name="time" value="half day"> Half day
-          </label>
-
-          <label>
-            Requested date
+            <span>Requested date</span>
             <input type="date" name="day" id="day" required>
           </label>
 
+          <label>
+            <div class="radio-buttons">
+              <input type="radio" name="time" value="full day"> Full day
+              <input type="radio" name="time" value="half day"> Half day
+            </div>
+          </label>
+
+
+
         </fieldset>
 
-        <button class="request-button" type="submit">Send booking request</button>
+        <button class="request-button" type="submit">Submit</button>
 
       </form>
     </div>
