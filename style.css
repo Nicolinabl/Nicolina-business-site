@@ -1,5 +1,6 @@
 body {
   background: white;
+  font-family: "montserrat";
 }
 
 /*Header section*/
@@ -8,7 +9,7 @@ body {
   font-size: 30px;
   top: 0;
   position: sticky;
-  background: #faebe8;
+  background: #658382;
   text-align: center;
   z-index: 1000;
 }
@@ -24,7 +25,6 @@ button {
 a {
   text-decoration: none;
   color: black;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a:hover {
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .hero {
-  background: url("images/marble.jpg") center/cover no-repeat;
+  background: url("images/blue-paint.jpg") center/cover no-repeat;
   height: 700px;
   width: 100%;
   text-align: center;
@@ -44,19 +44,11 @@ h1 {
   margin: 0 auto;
   padding-top: 200px;
   font-size: 9em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
 }
 
 .header-text {
   margin-bottom: 200px;
-}
-
-p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -65,17 +57,21 @@ h3 {
   background: white;
   text-align: center;
   font-size: 30px;
-  margin: 200px 0;
+  margin: 50px 0;
 }
 
 
 /* Main section */
 .main-section {
-  background: #fbf1ee;
+  background: white;
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
+  /*grid-auto-rows: 600px;*/
   margin: 0 auto;
+  padding: 10px 0;
+  border-top: 3px solid #658382;
+  border-bottom: 3px solid #658382;
 }
 
 img {
@@ -99,7 +95,7 @@ img {
 .card-1 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -107,7 +103,7 @@ img {
 .card-2 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -115,7 +111,7 @@ img {
 .card-3 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -123,7 +119,7 @@ img {
 .card-4 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   border: 1px solid #c9b27c;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
@@ -132,7 +128,7 @@ img {
 .card-5 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -140,7 +136,7 @@ img {
 .card-6 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -148,7 +144,7 @@ img {
 .card-7 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -156,7 +152,7 @@ img {
 .card-8 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -164,7 +160,7 @@ img {
 .card-9 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -172,7 +168,7 @@ img {
 .card-10 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -180,7 +176,7 @@ img {
 .card-11 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -188,7 +184,7 @@ img {
 .card-12 {
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 10px 15px -6px #c9b27c;
+  box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
   border: 0.5px solid #cac3b1;
 }
@@ -196,7 +192,7 @@ img {
 
 /* INFO and FORM section */
 .info-section {
-  background: white;
+  background: #faebe8;
   display: flex;
 }
 
@@ -235,7 +231,7 @@ form {
 
 /* Footer section*/
 footer {
-  background: #faebe8;
+  background: #658382;
   text-align: center;
   padding: 40px;
 }
