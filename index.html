@@ -3,35 +3,51 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
   <title>Willz agency</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 </head>
 
 <body>
   <!---HEADER FLEXBOX------------->
   <div class="nav-bar">
-    <button class="nav home"><a href="#"> Home </a></button>
-    <button class="nav models"><a href="#">Models</a></button>
-    <button class="nav about"><a href="#">About us</a></button>
-    <button class="nav contact"><a href="#">Contact</a></button>
+    <ul>
+      <li><a href="#">Home </a></li>
+      <li><a href="#">Models </a></li>
+      <li><a href="#">About us </a></li>
+      <li><a href="#">Contact </a></li>
+    </ul>
   </div>
 
   <header class="hero">
     <div class="header-text">
       <h1>WILLZ MODELS</h1>
-      <p>Feline model agency</p>
+      <p class="header-paragraph">Feline model agency</p>
     </div>
   </header>
 
-  <div class="intro">
+  <!---<div class="intro">
     <p>One cat, many faces...</p>
-  </div>
+  </div>--->
 
   <!----MAIN section GRID--------->
   <section class="main-section">
@@ -112,7 +128,7 @@
   <!--INFO + FORM section------->
   <section class="info-section">
     <div class="box info-text">
-      <h2>Info here</h2>
+      <h2>About us</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor. At ex
         recusandae quidem necessitatibus nemo quo quos pariatur, veniam, quam voluptatibus voluptates explicabo
         dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor.
@@ -129,22 +145,44 @@
     </div>
 
     <div class="box form-box">
-      <form action="http://httpbin.org/anything" method="post">
+      <form
+        action="http://httpbin.org/anything"
+        method="post"
+      >
+        <h3>Get in contact with us!</h3>
         <fieldset>
-          <legend>Send a booking request</legend>
           <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Your name" required>
+            <span class="customer-name">Name</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            >
           </label>
 
           <label>
-            <span>Email</span>
-            <input type="text" name="email" placeholder="cat@catmail.meow" required>
+            <span class="customer-email">Email</span>
+            <input
+              type="text"
+              name="email"
+              placeholder="cat@catmail.meow"
+              required
+            >
           </label>
 
           <label>
-            <span>Version of Willz</span>
-            <select name="willz-version" id="willz-version" required>
+            <span class="version-willz">Version of Willz</span>
+            <select
+              name="willz-version"
+              id="willz-version"
+              required
+            >
+              <option
+                value="Choose your version"
+                selected
+                disabled
+              >Choose your version</option>
               <option value="Sophisticated Willz">Sophisticated Willz</option>
               <option value="Cowboy Willz">Cowboy Willz</option>
               <option value="Fun Willz">Fun Willz</option>
@@ -152,22 +190,67 @@
           </label>
 
           <label>
-            <span>Requested date</span>
-            <input type="date" name="day" id="day" required>
+            <span class="requested-date">Requested date</span>
+            <input
+              type="date"
+              name="day"
+              id="day"
+              required
+            >
           </label>
 
-          <label>
+          <div class="radiobutton-row">
+            <label class="radiobutton-container">Full day
+              <input
+                type="radio"
+                name="time"
+                value="Full day"
+              >
+              <span class="custom-radiobutton"></span>
+            </label>
+            <label class="radiobutton-container">Half day
+              <input
+                type="radio"
+                name="time"
+                value="Half day"
+              >
+              <span class="custom-radiobutton"></span>
+            </label>
+
+          </div>
+
+          <!---<div class="checkbox-row">
+            <label class="checkbox-container">Half day
+              <input type="checkbox">
+              <span class="custom-checkbox"></span>
+            </label>
+            <label class="checkbox-container">Full day
+              <input type="checkbox">
+              <span class="custom-checkbox"></span>
+            </label>
+          </div>--->
+
+          <!----<label>
             <div class="radio-buttons">
-              <input type="radio" name="time" value="full day"> Full day
-              <input type="radio" name="time" value="half day"> Half day
+              <input
+                type="radio"
+                name="time"
+                value="full day"
+              > Full day
+              <input
+                type="radio"
+                name="time"
+                value="half day"
+              > Half day
             </div>
-          </label>
-
-
+          </label> --->
 
         </fieldset>
 
-        <button class="request-button" type="submit">Submit</button>
+        <button
+          class="request-button"
+          type="submit"
+        >Submit</button>
 
       </form>
     </div>
