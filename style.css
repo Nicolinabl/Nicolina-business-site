@@ -8,20 +8,26 @@ body {
 }
 
 /*Header section*/
-.nav-bar {
+/*.nav-bar {
   Padding: 20px;
   font-size: 30px;
   top: 0;
   position: sticky;
   background: white;
   z-index: 1000;
-}
+}*/
 
-ul {
+.nav-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  Padding: 20px;
+  font-size: 30px;
+  top: 0;
+  position: sticky;
+  background: white;
+  z-index: 1000;
 }
 
 li {
@@ -35,6 +41,56 @@ a {
 
 a:hover {
   color: #F5F0E1;
+}
+
+@media (max-width: 1024px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  color: black;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+  padding: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger .closeIcon {
+  display: none;
+}
+
+.hamburger .menuIcon {
+  display: inline-block;
 }
 
 .hero {
@@ -53,6 +109,12 @@ h1 {
   color: white;
 }
 
+@media (max-width: 667px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
 .header-text {
   margin-bottom: 200px;
 }
@@ -60,16 +122,6 @@ h1 {
 .header-paragraph {
   color: white;
 }
-
-
-/* Intro section */
-.intro {
-  background: white;
-  text-align: center;
-  font-size: 30px;
-  margin: 50px 0;
-}
-
 
 /* Main section */
 .main-section {
@@ -83,12 +135,24 @@ h1 {
   border-bottom: 3px solid #658382;
 }
 
+@media (min-width: 668px) and (max-width: 1024px) {
+  .main-section {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width:667px) {
+  .main-section {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
 img {
   width: 60%;
   margin-top: 20px;
 }
 
-.box {
+/*.box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,11 +161,32 @@ img {
   gap: 10px;
   border-radius: 1%;
   transition: all 0.5s;
-}
+}*/
 
 
 /* POLAROIDS*/
-.card-1 {
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin: 0 auto;
+  gap: 10px;
+  border-radius: 1%;
+  transition: all 0.5s;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -6px gray;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1024px) {
+  .card:hover {
+    rotate: -10deg;
+  }
+}
+
+/*.card one {
   width: 100%;
   max-width: 400px;
   box-shadow: 0 10px 15px -6px gray;
@@ -183,7 +268,7 @@ img {
   max-width: 400px;
   box-shadow: 0 10px 15px -6px gray;
   margin-bottom: 100px;
-}
+}*/
 
 
 /* INFO and FORM section */
@@ -192,17 +277,28 @@ img {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+
+  .info-section {
+    flex-direction: column;
+  }
+}
+
 .info-text {
   text-align: center;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.form-box {
+.form-section {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   width: 50%;
+  margin: 0 auto;
 }
 
 form {
@@ -230,10 +326,6 @@ span {
   margin: 15px;
 }
 
-label:last-child {
-  /*egen regel här för radioknappar ev*/
-}
-
 input {
   align-items: center;
   width: 80%;
@@ -258,7 +350,6 @@ select {
   flex-direction: column;
   align-items: center;
   position: relative;
-  /*padding-left: 25px;*/
   padding: 0;
   margin: 10px 5px;
   font-size: 15px;
@@ -289,10 +380,6 @@ select {
   background-color: black;
 }
 
-/*.radio-buttons {
-  margin-top: 10px;
-  ;
-}*/
 
 button {
   font-size: 30px;
@@ -310,42 +397,15 @@ footer {
 }
 
 
-/* Media queries */
-@media (max-width: 667px) {
-  h1 {
-    font-size: 3em;
-  }
-}
 
-@media (max-width: 1024px) {
-  .nav-bar {
-    display: none;
-  }
 
-  .info-section {
-    flex-direction: column;
-  }
-}
 
-@media (min-width: 668px) and (max-width: 1024px) {
-  .main-section {
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-  }
-}
 
-@media (max-width:667px) {
-  .main-section {
-    grid-template-columns: repeat(1, minmax(250px, 1fr));
-  }
-}
 
-@media (min-width: 1024px) {
 
-  .card-1:hover {
-    rotate: -10deg;
-  }
 
-  .card-2:hover {
+
+/*.card-2:hover {
     rotate: 5deg;
   }
 
@@ -388,4 +448,4 @@ footer {
   .card-12:hover {
     rotate: 2deg;
   }
-}
+}*/

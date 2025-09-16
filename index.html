@@ -25,18 +25,57 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet"
   >
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  >
 </head>
 
 <body>
-  <!---HEADER FLEXBOX------------->
-  <div class="nav-bar">
-    <ul>
-      <li><a href="#">Home </a></li>
-      <li><a href="#">Models </a></li>
-      <li><a href="#">About us </a></li>
-      <li><a href="#">Contact </a></li>
-    </ul>
-  </div>
+  <!---NAVBAR------------->
+  <ul class="nav-list">
+    <li><a href="#">Home </a></li>
+    <li><a href="#">Models </a></li>
+    <li><a href="#">About us </a></li>
+    <li><a href="#">Contact </a></li>
+  </ul>
+
+  <!---HAMBURGER MENU-->
+  <ul
+    id="menu"
+    class="menu"
+  >
+    <li><a
+        class="menuItem"
+        href="#"
+      >Home</a></li>
+    <li><a
+        class="menuItem"
+        href="#"
+      >Models</a></li>
+    <li><a
+        class="menuItem"
+        href="#"
+      >About us</a></li>
+    <li><a
+        class="menuItem"
+        href="#"
+      >Contact</a></li>
+  </ul>
+  <button
+    id="hamburger"
+    class="hamburger"
+  >
+    <i
+      id="menuIcon"
+      class="menuIcon material-icons"
+    >menu</i>
+    <i
+      id="closeIcon"
+      class="closeIcon material-icons"
+    >close</i>
+  </button>
 
   <header class="hero">
     <div class="header-text">
@@ -45,79 +84,75 @@
     </div>
   </header>
 
-  <!---<div class="intro">
-    <p>One cat, many faces...</p>
-  </div>--->
-
   <!----MAIN section GRID--------->
   <section class="main-section">
-    <div class="box card-1">
+    <div class="card 1">
       <img src="images/willz-zara.jpeg" />
       <h3>BLABLA 1</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-2">
+    <div class="card 2">
       <img src="images/Willz-fancy.jpeg" />
       <h3>BLABLA 2</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-3">
+    <div class="card 3">
       <img src="images/willz-cowboy.jpeg" />
       <h3>BLABLA 3</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-4">
+    <div class="card 4">
       <img src="images/Willz-catwalk.jpeg" />
       <h3>BLABLA 4</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-5">
+    <div class="card 5">
       <img src="images/willz-manicure.jpeg" />
       <h3>BLABLA 5</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-6">
+    <div class="card 6">
       <img src="images/willz-potato.jpeg" />
       <h3>BLABLA 6</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-7">
+    <div class="card 7">
       <img src="images/Willz-fun.jpeg" />
       <h3>BLABLA 7</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-8">
+    <div class="card 8">
       <img src="images/willz-jacket.jpeg" />
       <h3>BLABLA 8</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-9">
+    <div class="card 9">
       <img src="images/willz-zara.jpeg" />
       <h3>BLABLA 8</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-10">
+    <div class="card 10">
       <img src="images/Willz-fancy.jpeg" />
       <h3>BLABLA 10</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-11">
+    <div class="card 11">
       <img src="images/willz-potato.jpeg" />
       <h3>BLABLA 11</h3>
       <p>Text here</p>
     </div>
 
-    <div class="box card-12">
+    <div class="card 12">
       <img src="images/Willz-catwalk.jpeg" />
       <h3>BLABLA 12</h3>
       <p>Text here</p>
@@ -127,7 +162,7 @@
 
   <!--INFO + FORM section------->
   <section class="info-section">
-    <div class="box info-text">
+    <div class="info-text">
       <h2>About us</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio odit cupiditate esse maxime eius dolor. At ex
         recusandae quidem necessitatibus nemo quo quos pariatur, veniam, quam voluptatibus voluptates explicabo
@@ -144,7 +179,7 @@
       </p>
     </div>
 
-    <div class="box form-box">
+    <div class="form-section">
       <form
         action="http://httpbin.org/anything"
         method="post"
@@ -218,33 +253,6 @@
             </label>
 
           </div>
-
-          <!---<div class="checkbox-row">
-            <label class="checkbox-container">Half day
-              <input type="checkbox">
-              <span class="custom-checkbox"></span>
-            </label>
-            <label class="checkbox-container">Full day
-              <input type="checkbox">
-              <span class="custom-checkbox"></span>
-            </label>
-          </div>--->
-
-          <!----<label>
-            <div class="radio-buttons">
-              <input
-                type="radio"
-                name="time"
-                value="full day"
-              > Full day
-              <input
-                type="radio"
-                name="time"
-                value="half day"
-              > Half day
-            </div>
-          </label> --->
-
         </fieldset>
 
         <button
@@ -257,11 +265,12 @@
 
   </section>
 
-  <!---Footer section----------->
+  <!---FOOTER----------->
   <footer>
     <p>Created by Nicolina Bäcklin Löwenberg</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
