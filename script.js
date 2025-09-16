@@ -17,3 +17,12 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu)
+
+/*const submitButton = document.getElementById("submit-button")
+
+const bookingRequest = () => {
+  alert("Great choice.We will get back to you shortly with more details".)
+}
+
+submitButton.addEventListener("click", bookingRequest)*/
+
