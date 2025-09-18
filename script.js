@@ -1,3 +1,34 @@
+const hamburgerLinks = document.querySelector(".hamburgerLinks")
+
+function hamburgerFunction(close) {
+  close.classList.toggle("change")
+  hamburgerLinks.classList.toggle("open")
+}
+
+const btn = document.getElementById("partyMode")
+const partyBackground = document.getElementById("modelSection")
+
+btn.onclick = () => {
+  partyBackground.classList.toggle("party")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OLD JAVASCRIPT
 const menu = document.getElementById("menu")
 const menuItems = document.getElementsByClassName("menuItem")
 const hamburger = document.getElementById("hamburger")
@@ -16,13 +47,5 @@ function toggleMenu() {
   }
 }
 
-hamburger.addEventListener("click", toggleMenu)
-
-/*const submitButton = document.getElementById("submit-button")
-
-const bookingRequest = () => {
-  alert("Great choice.We will get back to you shortly with more details".)
-}
-
-submitButton.addEventListener("click", bookingRequest)*/
+hamburger.addEventListener("click", toggleMenu)*/
 

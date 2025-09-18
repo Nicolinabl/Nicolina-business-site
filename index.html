@@ -33,59 +33,54 @@
 </head>
 
 <body>
-  <!---NAVBAR------------->
+  <!---NAVBAR DESKTOP------------->
   <ul class="nav-list">
-    <li><a href="#">Home </a></li>
-    <li><a href="#">Models </a></li>
-    <li><a href="#">About us </a></li>
-    <li><a href="#">Contact </a></li>
+    <li><a href="#homePage">Home </a></li>
+    <li><a href="#modelSection">Models </a></li>
+    <li><a href="#information">About us </a></li>
+    <li><a href="#formSection">Contact </a></li>
+    <!--<div class="partySection">---->
+    <button
+      id="partyMode"
+      class="partyButton"
+    >Party mode</button>
+    <!---</div>--->
   </ul>
 
   <!---HAMBURGER MENU-->
-  <ul
-    id="menu"
-    class="menu"
-  >
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Home</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Models</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >About us</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Contact</a></li>
-    </span>
-  </ul>
-  <button
-    id="hamburger"
+  <div
     class="hamburger"
+    onclick="hamburgerFunction(this)"
   >
-    <i
-      id="menuIcon"
-      class="menuIcon material-icons"
-    >menu</i>
-    <i
-      id="closeIcon"
-      class="closeIcon material-icons"
-    >close</i>
-  </button>
+    <div class="barOne"></div>
+    <div class="barTwo"></div>
+    <div class="barThree"></div>
+  </div>
 
-  <header class="hero">
+  <!--old class name "menu", now navLinks, change to something else?-->
+  <!---add span with class name "hamburger-links"?-->
+  <nav class="hamburgerLinks">
+    <ul>
+      <span class="hamburgerLinkSpan">
+        <li class="hamburgerList"><a href="#homePage">Home</li></a>
+      </span>
+      <span class="hamburgerLinkSpan">
+        <li class="hamburgerList"><a href="#modelSection">Models</li></a>
+      </span>
+      <span class="hamburgerLinkSpan">
+        <li class="hamburgerList"><a href="#information">About us</li></a>
+      </span>
+      <span class="hamburgerLinkSpan">
+        <li class="hamburgerList"><a href="#formSection">Contact</li></a>
+      </span>
+    </ul>
+  </nav>
+
+  <!---HERO SECTION-->
+  <header
+    id="homePage"
+    class="hero"
+  >
     <div class="header-text">
       <h1>WILLZ MODELS</h1>
       <p class="header-paragraph">Feline model agency</p>
@@ -93,7 +88,10 @@
   </header>
 
   <!----MAIN section GRID--------->
-  <section class="main-section">
+  <section
+    id="modelSection"
+    class="main-section"
+  >
     <div class="card 1">
       <img src="images/willz-zara.jpeg" />
       <h3>Fashionable Willz</h3>
@@ -157,7 +155,10 @@
 
 
   <!--INFO + FORM section------->
-  <section class="info-section">
+  <section
+    id="information"
+    class="info-section"
+  >
     <div class="info-text">
       <h2>About us</h2>
 
@@ -169,7 +170,10 @@
         feline phenom turn you project into a paw-some masterpiece.
     </div>
 
-    <div class="form-section">
+    <div
+      id="formSection"
+      class="form-section"
+    >
       <form
         action="http://httpbin.org/anything"
         method="post"
@@ -250,9 +254,6 @@
             >Submit</button>
           </div>
         </fieldset>
-
-
-
       </form>
     </div>
 
@@ -267,3 +268,48 @@
 </body>
 
 </html>
+
+
+<!--OLD ul list ignore this-------
+  <ul
+    id="menu"
+    class="menu"
+  >
+    <span class="hamburger-links">
+      <li class="hamburger-text"><a
+          class="menuItem"
+          href="#"
+        >Home</a></li>
+    </span>
+    <span class="hamburger-links">
+      <li class="hamburger-text"><a
+          class="menuItem"
+          href="#"
+        >Models</a></li>
+    </span>
+    <span class="hamburger-links">
+      <li class="hamburger-text"><a
+          class="menuItem"
+          href="#"
+        >About us</a></li>
+    </span>
+    <span class="hamburger-links">
+      <li class="hamburger-text"><a
+          class="menuItem"
+          href="#"
+        >Contact</a></li>
+    </span>
+  </ul>
+  <button
+    id="hamburger"
+    class="hamburger"
+  >
+    <i
+      id="menuIcon"
+      class="menuIcon material-icons"
+    >menu</i>
+    <i
+      id="closeIcon"
+      class="closeIcon material-icons"
+    >close</i>
+  </button> ----->
