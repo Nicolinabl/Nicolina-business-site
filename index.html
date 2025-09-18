@@ -34,7 +34,10 @@
 
 <body>
   <!---NAVBAR DESKTOP------------->
-  <ul class="nav-list">
+  <ul
+    id="desktopNav"
+    class="nav-list"
+  >
     <li><a href="#homePage">Home </a></li>
     <li><a href="#modelSection">Models </a></li>
     <li><a href="#information">About us </a></li>
@@ -82,8 +85,8 @@
     class="hero"
   >
     <div class="header-text">
-      <h1>WILLZ MODELS</h1>
-      <p class="header-paragraph">Feline model agency</p>
+      <h1 id="heroText">WILLZ MODELS</h1>
+      <p class="header-paragraph">A one cat feline model agency</p>
     </div>
   </header>
 
@@ -94,62 +97,62 @@
   >
     <div class="card 1">
       <img src="images/willz-zara.jpeg" />
-      <h3>Fashionable Willz</h3>
+      <h3>High fashion</h3>
     </div>
 
     <div class="card 2">
       <img src="images/Willz-fancy.jpeg" />
-      <h3>Fancy Willz</h3>
+      <h3>Sofisticated</h3>
     </div>
 
     <div class="card 3">
       <img src="images/willz-cowboy.jpeg" />
-      <h3>Cowboy Willz</h3>
+      <h3>Cowboy</h3>
     </div>
 
     <div class="card 4">
       <img src="images/Willz-catwalk.jpeg" />
-      <h3>Catwalk Willz</h3>
+      <h3>Catwalk</h3>
     </div>
 
     <div class="card 5">
-      <img src="images/willz-manicure.jpeg" />
-      <h3>Manicure Willz</h3>
+      <img src="images/willz-royal.jpeg" />
+      <h3>Royal</h3>
     </div>
 
     <div class="card 6">
       <img src="images/willz-potato.jpeg" />
-      <h3>Potato lover Willz</h3>
+      <h3>Poser</h3>
     </div>
 
     <div class="card 7">
-      <img src="images/willz-nature.jpeg" />
-      <h3>Nature Willz</h3>
+      <img src="images/willz-kpop.jpeg" />
+      <h3>Modern</h3>
     </div>
 
     <div class="card 8">
       <img src="images/willz-jacket.jpeg" />
-      <h3>Suit jacket Willz</h3>
+      <h3>Casual</h3>
     </div>
 
     <div class="card 9">
       <img src="images/willz-princess.jpeg" />
-      <h3>BLABLA 8</h3>
+      <h3>Princess</h3>
     </div>
 
     <div class="card 10">
-      <img src="images/Willz-fancy.jpeg" />
-      <h3>BLABLA 10</h3>
+      <img src="images/willz-artsy.jpeg" />
+      <h3>Artsy</h3>
     </div>
 
     <div class="card 11">
-      <img src="images/willz-potato.jpeg" />
-      <h3>BLABLA 11</h3>
+      <img src="images/willz-manicure.jpeg" />
+      <h3>Manicured</h3>
     </div>
 
     <div class="card 12">
-      <img src="images/Willz-catwalk.jpeg" />
-      <h3>BLABLA 12</h3>
+      <img src="images/willz-nature.jpeg" />
+      <h3>Natural</h3>
     </div>
   </section>
 
@@ -160,14 +163,19 @@
     class="info-section"
   >
     <div class="info-text">
-      <h2>About us</h2>
-
+      <h2>About us. Or... about Willz.</h2>
+      <img
+        class="infoImage"
+        src="images/willz-dreaming.png"
+        alt="cat"
+      >
       <Professional>Forget about casting calls, multiple models, or diva drama. Willz is the one-cat wonder your brand
         has been dreaming of. From slick fashion to casual cool, Willz can pull off any look, any pose and any vibe. All
         without a single hiss. Professional Purr-fectionist: Takes direction better than most humans. Multi-Look Maven:
-        From suave sunglasses to cozy sweater vibes, Willz does it all. Flexible & Focused: Stretches, yawns, or stares
-        dramatically — all on cue. Why hire a dozen cats when Willz has mastered them all? Book a shoot and let this
-        feline phenom turn you project into a paw-some masterpiece.
+        From well dressed sofisticated looks to natural vibes, Willz does it all. Flexible & Focused: Stretches, yawns,
+        or stares
+        dramatically, all on cue. Why hire a dozen cats when Willz has mastered it all? Book a shoot and let this
+        feline phenomenon turn you project into a paw-some masterpiece.
     </div>
 
     <div
@@ -178,7 +186,9 @@
         action="http://httpbin.org/anything"
         method="post"
       >
-        <h3>Request a booking with willz</h3>
+        <div class="formHeading">
+          <h3>Request a booking with willz</h3>
+        </div>
         <fieldset>
           <label>
             <span class="customer-name">Name</span>

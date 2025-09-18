@@ -22,6 +22,10 @@ body {
   z-index: 1000;
 }
 
+.nav-list.partyNav {
+  background-color: pink;
+}
+
 li {
   margin: 0px 15px;
 }
@@ -114,7 +118,7 @@ a:hover {
 /* HERO SECTION */
 .hero {
   background: url("images/blue-paint.jpg") center/cover no-repeat;
-  height: 700px;
+  height: 50vh;
   width: 100%;
   text-align: center;
   position: relative;
@@ -123,9 +127,13 @@ a:hover {
 
 h1 {
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 100px;
   font-size: 9em;
   color: white;
+}
+
+h1.partyText {
+  color: pink;
 }
 
 @media (max-width: 667px) {
@@ -235,6 +243,12 @@ h3 {
   }
 }
 
+.infoImage {
+  border-radius: 50%;
+  width: 35%;
+  margin-bottom: 30px;
+}
+
 .info-text {
   text-align: center;
   width: 50%;
@@ -259,6 +273,10 @@ form {
   min-width: 250px;
   padding: 10px;
   margin 0 auto;
+}
+
+.formHeading {
+  text-align: center;
 }
 
 fieldset {

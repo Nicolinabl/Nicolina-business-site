@@ -6,10 +6,14 @@ function hamburgerFunction(close) {
 }
 
 const btn = document.getElementById("partyMode")
-const partyBackground = document.getElementById("modelSection")
+const modelSection = document.getElementById("modelSection")
+const desktopNav = document.getElementById("desktopNav")
+const heroText = document.getElementById("heroText")
 
 btn.onclick = () => {
-  partyBackground.classList.toggle("party")
+  modelSection.classList.toggle("party")
+  desktopNav.classList.toggle("partyNav")
+  heroText.classList.toggle("partyText")
 }
 
 
