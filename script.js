@@ -11,20 +11,34 @@ const modelSection = document.getElementById("modelSection")
 const desktopNav = document.getElementById("desktopNav")
 const heroText = document.getElementById("heroText")
 const btnHamburger = document.getElementById("partyModeHamburger")
+const fullBody = document.getElementById("fullBody")
 
 btn.onclick = () => {
   modelSection.classList.toggle("party")
   desktopNav.classList.toggle("partyNav")
   heroText.classList.toggle("partyText")
+  fullBody.classList.toggle("partyBody")
+
+  /*if (btn.innerText === "Party mode") {
+    btn.innerText = "Normal mode"
+  } else {
+    btn.innerText = "Party mode"
+  } */
 }
 
 btnHamburger.onclick = () => {
   modelSection.classList.toggle("party")
   desktopNav.classList.toggle("partyNav")
   heroText.classList.toggle("partyText")
+  fullBody.classList.toggle("partyBody")
   closeHamburger()
-}
 
+  /*if (btnHamburger.innerText === "Party mode") {
+    btnHamburger.innerText = "Normal mode"
+  } else {
+    btnHamburger.innerText = "Party mode"
+  }*/
+}
 
 function closeHamburger() {
   hamburgerLinks.classList.remove("open")
