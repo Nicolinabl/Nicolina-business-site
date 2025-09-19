@@ -42,12 +42,10 @@
     <li><a href="#modelSection">Models </a></li>
     <li><a href="#information">About us </a></li>
     <li><a href="#formSection">Contact </a></li>
-    <!--<div class="partySection">---->
     <button
       id="partyMode"
       class="partyButton"
     >Party mode</button>
-    <!---</div>--->
   </ul>
 
   <!---HAMBURGER MENU-->
@@ -60,22 +58,37 @@
     <div class="barThree"></div>
   </div>
 
-  <!--old class name "menu", now navLinks, change to something else?-->
-  <!---add span with class name "hamburger-links"?-->
   <nav class="hamburgerLinks">
     <ul>
       <span class="hamburgerLinkSpan">
-        <li class="hamburgerList"><a href="#homePage">Home</li></a>
+        <li
+          onclick="closeHamburger()"
+          class="hamburgerList"
+        ><a href="#homePage">Home</li></a>
       </span>
       <span class="hamburgerLinkSpan">
-        <li class="hamburgerList"><a href="#modelSection">Models</li></a>
+        <li
+          onclick="closeHamburger()"
+          class="hamburgerList"
+        ><a href="#modelSection">Models</li></a>
       </span>
       <span class="hamburgerLinkSpan">
-        <li class="hamburgerList"><a href="#information">About us</li></a>
+        <li
+          onclick="closeHamburger()"
+          class="hamburgerList"
+        ><a href="#information">About us</li></a>
       </span>
       <span class="hamburgerLinkSpan">
-        <li class="hamburgerList"><a href="#formSection">Contact</li></a>
+        <li
+          onclick="closeHamburger()"
+          class="hamburgerList"
+        ><a href="#formSection">Contact</li></a>
       </span>
+      <span class="hamburgerButtonSpan"><button
+          onclick="partyCloseHamburger()"
+          id="partyModeHamburger"
+          class="partyButton"
+        >Party mode</button></span>
     </ul>
   </nav>
 
@@ -86,7 +99,7 @@
   >
     <div class="header-text">
       <h1 id="heroText">WILLZ MODELS</h1>
-      <p class="header-paragraph">A one cat feline model agency</p>
+      <p class="header-paragraph">A one cat model agency</p>
     </div>
   </header>
 
@@ -203,7 +216,7 @@
           <label>
             <span class="customer-email">Email</span>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="cat@catmail.meow"
               required
@@ -278,48 +291,3 @@
 </body>
 
 </html>
-
-
-<!--OLD ul list ignore this-------
-  <ul
-    id="menu"
-    class="menu"
-  >
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Home</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Models</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >About us</a></li>
-    </span>
-    <span class="hamburger-links">
-      <li class="hamburger-text"><a
-          class="menuItem"
-          href="#"
-        >Contact</a></li>
-    </span>
-  </ul>
-  <button
-    id="hamburger"
-    class="hamburger"
-  >
-    <i
-      id="menuIcon"
-      class="menuIcon material-icons"
-    >menu</i>
-    <i
-      id="closeIcon"
-      class="closeIcon material-icons"
-    >close</i>
-  </button> ----->

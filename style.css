@@ -7,7 +7,7 @@ body {
   font-family: "montserrat";
 }
 
-/* NAVIGATION BAR*/
+/* NAVIGATION BAR on desktop*/
 .nav-list {
   list-style-type: none;
   margin: 0;
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #F5F0E1;
+  color: #bebbb0;
 }
 
 @media (max-width: 1024px) {
@@ -45,8 +45,7 @@ a:hover {
   }
 }
 
-/*HAMBURGER MENU NEW*/
-
+/* HAMBURGER MENU on smaller screens*/
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -64,8 +63,11 @@ a:hover {
   .hamburgerLinks {
     display: none;
   }
-
 }
+
+/*.hamburgerLinks.closeHamburger {
+  display: none;
+}*/
 
 .barOne,
 .barTwo,
@@ -113,44 +115,15 @@ a:hover {
 
 .hamburgerLinkSpan {
   font-size: 40px;
+  align-items: center;
 }
 
-/* HERO SECTION */
-.hero {
-  background: url("images/blue-paint.jpg") center/cover no-repeat;
-  height: 50vh;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.hamburgerButtonSpan {
+  display: flex;
+  justify-content: center;
 }
 
-h1 {
-  margin: 0 auto;
-  padding-top: 100px;
-  font-size: 9em;
-  color: white;
-}
-
-h1.partyText {
-  color: pink;
-}
-
-@media (max-width: 667px) {
-  h1 {
-    font-size: 3em;
-  }
-}
-
-.header-text {
-  margin-bottom: 200px;
-}
-
-.header-paragraph {
-  color: white;
-}
-
-/* PARTY BUTTON SECTION*/
+/* PARTY BUTTON */
 .partySection {
   display: flex;
   justify-content: center;
@@ -173,6 +146,41 @@ h1.partyText {
 
 .main-section.party {
   background: url("images/golden-party.jpg") center/cover no-repeat;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url("images/blue-paint.jpg") center/cover no-repeat;
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0 auto;
+  padding-top: 100px;
+  font-size: 6em;
+  color: white;
+}
+
+h1.partyText {
+  color: pink;
+}
+
+@media (max-width: 667px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.header-text {
+  margin: auto;
+}
+
+.header-paragraph {
+  color: white;
 }
 
 /* MAIN SECTION */
@@ -204,7 +212,7 @@ img {
   margin-top: 20px;
 }
 
-/* POLAROIDS*/
+/* POLAROIDS */
 .card {
   display: flex;
   flex-direction: column;
@@ -247,6 +255,7 @@ h3 {
   border-radius: 50%;
   width: 35%;
   margin-bottom: 30px;
+  border: 20px solid #658382;
 }
 
 .info-text {
@@ -257,6 +266,16 @@ h3 {
   margin: 0 auto;
   padding: 0 50px;
   align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .info-text {
+    width: 100%;
+  }
+
+  .infoImage {
+    border: none;
+  }
 }
 
 .form-section {
@@ -369,75 +388,9 @@ select {
   border-radius: 10px;
 }
 
-/* Footer section*/
+/* FOOTER SECTION */
 footer {
   background: #658382;
   text-align: center;
   padding: 40px;
 }
-
-
-/*HAMBURGER MENU OLD*/
-/*.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: white;
-  color: black;
-  list-style: none;
-  padding-top: 4rem;
-}
-
-.hamburger-text {
-  font-size: 30px;
-}
-
-.hamburger-links {
-  text-align: end;
-  padding: 10px;
-}
-
-@media (min-width: 1024px) {
-  .menu {
-    display: none;
-  }
-}
-
-.showMenu {
-  transform: translateY(0);
-}
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 30px;
-  right: 2px;
-  padding: 15px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.hamburger .closeIcon {
-  display: none;
-}
-
-.hamburger .menuIcon {
-  display: inline-block;
-}*/
-
-
-/*Header section*/
-/*.nav-bar {
-  Padding: 20px;
-  font-size: 30px;
-  top: 0;
-  position: sticky;
-  background: white;
-  z-index: 1000;
-}*/
